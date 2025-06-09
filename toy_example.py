@@ -15,7 +15,7 @@ import pickle
 n=50                        # 2*n is the window size; n is the half window size.
 s_bound=8                   # The early stop threshold. It can be set to a large value, as the algorithm typically stops before reaching 4.
 cv_flag=0                   # If set to 0, the algorithm will not use cross-validation. If set to 1, the algorithm will use cross-validation.        
-topK=None                   # This means only the parents with the top K statistics from the PC algorithm are considered for each variable. Be default, we consider all parents.
+topK=None                   # This means only the parents with the top K statistics from the PCMCI algorithm are considered for each variable. Be default, we consider all parents.
                             # However, if the sample are not enough, set topK=1,2,...
 alpha_i=1                   # By default, this is set to 1. No need to change this value.
 alpha_0=0.5                 # By default, this is set to 0.5. No need to change this value.
