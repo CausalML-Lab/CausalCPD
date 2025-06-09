@@ -5,7 +5,7 @@
 # The current version of CPD algorithm is designed to handle only one change point. For multiple change points, divide the data manually into segments with one change point each, run the algorithm on each segment with the same parameters, and then merge the results.
 
 import sys
-sys.path.insert(0,'/home/gao565/PCMCI_CP') 
+# sys.path.insert(0,'/home/gao565/PCMCI_CP') 
 
 import os
 from tqdm import tqdm
