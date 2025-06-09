@@ -66,5 +66,5 @@ with open(f'test_Tc_matrix.pkl', 'rb') as f_Tc_matrix:
     Tc_matrix = pickle.load(f_Tc_matrix)
     
 for i in range(N):
-  print("Estimated Change Point interval for "+str(i)+"th variable:" +str(last_Tc_esti_interval[i]))
+  print("Estimated Change Point interval for "+str(i)+"th variable:" +str(last_Tc_esti_interval[i])+" vs true change point index:" +str(Tc_matrix[i]))
 
