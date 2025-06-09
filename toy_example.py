@@ -34,8 +34,8 @@ edge_matrix = None
 Tc_esti_interval_sort_top1_dic,s,max_value_score1,superset_dict_est_final,total_est_edge,total_est_regime_edge,superset_bool,elapsed_time,green_flag,max_sample_subtimeseries,average_sample_subtimeseries = CP_algorithm(data,T,N,s_bound,n,domain_of_var_vector,tau_max,edge_matrix,cv_flag,topK,alpha_i,alpha_0,k_dim_condi)
 last_Tc_esti_interval = final_result(N,max_value_score1,Tc_esti_interval_sort_top1_dic)
 print("last_Tc_esti_interval",last_Tc_esti_interval)
-## This is the true change point matrix, which is a numpy array with shape (N,). Each element is the index of the change point for the corresponding univariate time series.
-## This is only used for evaluation purposes, and is not used in the algorithm.
+## Tc_matrix is the true change point matrix, which is a numpy array with shape (N,). Each element is the index of the change point for the corresponding univariate time series.
+## Tc_matrix is only used for evaluation purposes and is not used in the algorithm.
 with open(f'test_Tc_matrix.pkl', 'rb') as f_Tc_matrix:
     Tc_matrix = pickle.load(f_Tc_matrix)
 
