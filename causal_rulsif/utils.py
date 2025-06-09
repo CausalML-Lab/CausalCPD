@@ -1,8 +1,9 @@
 # FILENAME: utils.py
 # Author: Shanyun Gao
 # Paper: https://openreview.net/forum?id=3tV5AtAXk0
-# Note that this code utilizes the old verision of tigramite package(v5.1.0), with a significant portion aligning with the logic present in functions from the tigramite package.
-# The current version of CPD algorithm is designed to handle only one change point. For multiple change points, divide the data manually into segments with one change point each, run the algorithm on each segment with the same parameters, and then merge the results.
+# Note that this code utilizes the old version of tigramite package(v5.1.0), with a significant portion aligning with the logic present in functions from the tigramite package.
+# Note that this code utilizes the MATLAB implementation of the RuLSIF algorithm from https://arxiv.org/pdf/1203.0453 (Liu et al. [2013]) and has been converted into Python.
+# The current version of the CPD algorithm is designed to handle only one change point. For multiple change points, divide the data manually into segments with one change point each, run the algorithm on each segment with the same parameters, and then merge the results.
 
 import sys
 # sys.path.insert(0,'/home/gao565/PCMCI_CP') 
